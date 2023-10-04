@@ -24,6 +24,7 @@ a:hover {
 }
 
 body {
+  background-color: #ffffff;
   margin: 0;
   display: flex;
   place-items: center;
@@ -66,4 +67,70 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  /* color: #d9d9d9; */
+  /* padding: 20px; */
+  /* height: 100vh; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* .counter {
+  display: flex;
+  align-items: flex-end;
+} */
+
+.counter > button {
+  /* height: 50px; */
+  /* width: 50px; */
+  /* border-radius: 50%; */
+  /* border: none; */
+  cursor: pointer;
+  background-color: #d1cfea;
+  /* color: #d9d9d9; */
+  /* font-size: 1.5rem; */
+}
+
+.counter > button:hover {
+  background-color: #7678bd;
+  color: #d9d9d9;
+}
+
+.counter > button:focus {
+  outline: none;
+}
+
+.counter--count {
+  background-color: #f5f6fa;
+  height: 100px;
+  /* width: 100px; */
+  /* border-radius: 50%; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #7678bd;
+}
+
+.counter--plus {
+  /* margin-left: -20px; */
+}
+
+.counter--minus {
+  /* margin-right: -20px; */
+  /* z-index: 1; */
+}
+/* .page {
+  background-color: #ffffff;
+} */
+.holderr {
+  background-color: #f5f6fa;
 }
