@@ -1,0 +1,138 @@
+.home-right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-darkest);
+  padding: 14px 16px 14px 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.home-right-nav-suggestions {
+  color: #fff;
+  margin: 0 34px 0 16px;
+}
+
+.home-right-nav-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-right-nav-dropdown-btn {
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  font-size: var(--h4);
+  padding: 4px;
+}
+
+.home-right-nav-dropdown-btn span {
+  margin-right: 8px;
+  font-weight: 700;
+}
+
+.home-right-nav-dropdown-btn:hover {
+  color: var(--grey-75);
+}
+
+.home-right-nav-dropdown-btn:focus-visible {
+  outline: #fff dotted 2px;
+}
+
+.home-right-nav-dropdown-btn .active {
+  transition: all 0.2s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.home-right-nav-dropdown-outer {
+  position: relative;
+}
+
+.home-right-nav-dropdown {
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  box-shadow: 0 10px 40px -7px hsla(230, 31%, 31%, 0.35);
+  border-radius: 10px;
+  width: 255px;
+  opacity: 0;
+  top: 66px;
+  left: 0;
+}
+
+.home-right-nav-dropdown.active,
+.home-right-nav-dropdown:focus-within {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.home-right-nav-dropdown:focus-visible {
+  outline: var(--grey-dark) dotted 2px;
+}
+
+.home-right-nav-dropdown li {
+  width: 100%;
+}
+
+.home-right-nav-dropdown li:not(:last-child) {
+  border-bottom: 1px solid var(--grey-darker-15);
+}
+
+.home-right-nav-dropdown button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--grey-dark);
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.home-right-nav-dropdown button:hover,
+.home-right-nav-dropdown button:focus {
+  color: var(--purple);
+}
+
+.home-right-nav-dropdown button svg {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.home-right-nav-dropdown button.active svg {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .home-right-nav {
+    margin-bottom: 32px;
+    padding: 8px 24px;
+    border-radius: 0;
+  }
+
+  .home-right-nav-suggestions {
+    margin: 0 24px 0 0;
+  }
+
+  #suggestions-icon {
+    display: none;
+  }
+
+  .home-right-nav-dropdown {
+    width: 200px;
+    top: 50px;
+  }
+
+  .home-right main {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-right-nav-suggestions {
+    display: none;
+  }
+}

@@ -1,0 +1,33 @@
+.go-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.go-back:hover span {
+  text-decoration: underline;
+}
+
+.go-back span {
+  font-size: var(--h4);
+  color: var(--grey-dark);
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.go-back.white span {
+  color: #fff;
+}
+
+.go-back.white svg path {
+  stroke: #cdd2ee;
+}
+
+.go-back:focus-visible {
+  outline: var(--grey-dark) dotted 2px;
+}
+
+.go-back.white:focus-visible {
+  outline: #fff dotted 2px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Product Feedback App",
+  "short_name": "Product Feedback App",
+  "description": "Allows users to give feedback on a project and see a roadmap",
+  "lang": "en-GB",
+  "theme_color": "#000",
+  "background_color": "#fff"
+}

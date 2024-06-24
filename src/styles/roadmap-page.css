@@ -1,0 +1,94 @@
+.roadmap-page {
+  padding: 78px 40px;
+}
+
+.roadmap-page .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.roadmap-page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-darkest);
+  margin-bottom: 48px;
+  border-radius: 10px;
+  padding: 27px 32px;
+  width: 100%;
+}
+
+.roadmap-page .header h1 {
+  color: #fff;
+  margin-top: 4px;
+}
+
+.roadmap-status-container.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.roadmap-status-container.mobile {
+  display: none;
+}
+
+.roadmap-status-container > div {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .roadmap-status-container.desktop {
+    gap: 10px;
+  }
+
+  .roadmap-page {
+    padding: 56px 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .roadmap-status-container.desktop {
+    display: none;
+  }
+
+  .roadmap-status-container.mobile {
+    display: block;
+  }
+
+  .roadmap-page {
+    padding: 0;
+  }
+
+  .roadmap-page .header {
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 24px;
+  }
+
+  .roadmap-status-container.mobile > div {
+    padding: 24px;
+  }
+
+  .roadmap-status-container.mobile > div > div {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .roadmap-status-container.mobile .status-list-header h3 {
+    letter-spacing: -0.25px;
+    font-size: 1.125rem;
+    line-height: 26px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

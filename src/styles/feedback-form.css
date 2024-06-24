@@ -1,0 +1,88 @@
+.feedback-form {
+  background-color: #fff;
+  padding: 0 42px 42px 42px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.feedback-form .icon {
+  margin-top: -28px;
+  height: 56px;
+  width: 56px;
+}
+
+.feedback-form .title {
+  color: var(--grey-darker);
+  margin: 24px 0 40px 0;
+}
+
+.feedback-form.edit .title {
+  margin: 24px 0 75px 0;
+}
+
+.feedback-form .buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.feedback-form.edit .buttons {
+  justify-content: space-between;
+}
+
+.feedback-form .buttons > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.feedback-form.edit .buttons > div {
+  justify-content: flex-end;
+}
+
+.feedback-form .buttons .btn {
+  min-width: 0;
+}
+
+.feedback-form .input-group:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 760px) {
+  .feedback-form .buttons {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .feedback-form.edit .buttons {
+    flex-direction: column-reverse;
+  }
+
+  .feedback-form .buttons > div {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .feedback-form .buttons .btn {
+    width: 100%;
+  }
+
+  .feedback-form {
+    padding: 0 24px 24px 24px;
+  }
+
+  .feedback-form .icon {
+    margin-top: -20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .feedback-form .title,
+  .feedback-form.edit .title {
+    margin: 24px 0;
+  }
+}

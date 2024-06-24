@@ -1,0 +1,28 @@
+.feedback-detail {
+  padding: 80px 40px;
+}
+
+.feedback-detail-container {
+  margin: 0 auto;
+  max-width: var(--max-width-s);
+  width: 100%;
+}
+
+.feedback-detail-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 950px) {
+  .feedback-detail {
+    padding: 56px 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .feedback-detail {
+    padding: 24px;
+  }
+}
